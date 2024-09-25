@@ -13,6 +13,10 @@ The script(s) in this repository can be installed to monitor system activity.
 > It's worth noting that LaunchDaemons are preferred over LaunchAgents in the macOS ecosystem as they are ideal for background processes.
 
 # Daemon level modifications
+Setting daemons
+1. ```sudo chmod 644 com.daemon_name.plist```
+2. ```sudo mv com.daemon_name.plist /Library/LaunchDaemons/```
+
 Loading daemons
 
 ```sudo launchctl load /Library/LaunchDaemons/com.daemon_name.plist```
